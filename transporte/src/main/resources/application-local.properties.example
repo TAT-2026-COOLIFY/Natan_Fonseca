@@ -1,0 +1,6 @@
+# Copie para application-local.properties e preencha com seus valores.
+spring.datasource.url=jdbc:mysql://localhost:3306/transporte
+spring.datasource.username=root
+spring.datasource.password=SUA_SENHA
+openroute.api.key=SUA_CHAVE_OPENROUTE
+jwt.secret=GERE_UM_SEGREDO_LONGO_E_ALEATORIO

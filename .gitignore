@@ -1,0 +1,25 @@
+# Backend (Spring Boot / Maven)
+transporte/target/
+transporte/.mvn/wrapper/maven-wrapper.jar
+
+# Frontend (Vite/React)
+front/node_modules/
+front/dist/
+front/dist-ssr/
+front/*.local
+
+# Secrets
+front/.env
+front/.env.*
+
+# Editors
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+
+# Config local do backend (segredos)
+transporte/src/main/resources/application-local.properties
+!front/.env.example

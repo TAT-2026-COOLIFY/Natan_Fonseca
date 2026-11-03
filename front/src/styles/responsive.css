@@ -1,0 +1,19 @@
+
+@media (max-width: 760px) {
+  .trip-edit-grid,
+  .trip-edit-route-preview {
+    grid-template-columns: 1fr;
+  }
+
+  .trip-edit-modal-actions {
+    flex-direction: column-reverse;
+  }
+
+  .cadastro-modal-form {
+    grid-template-columns: 1fr;
+  }
+
+  .cadastro-modal-actions {
+    flex-direction: column-reverse;
+  }
+}

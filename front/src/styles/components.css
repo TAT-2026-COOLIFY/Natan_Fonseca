@@ -1,0 +1,138 @@
+
+
+.badge-success,
+.badge-danger,
+.badge-info,
+.badge-warning,
+.badge-neutral {
+  display: inline-block;
+  padding: 7px 11px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.badge-success {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.badge-danger {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.badge-info {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.badge-warning {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.badge-neutral {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+/* inputs no modo escuro */
+
+body.dark-theme .form-group label {
+  color: #cbd5e1;
+}
+
+body.dark-theme .form-group input,
+body.dark-theme .form-group select,
+body.dark-theme .date-time-input-row input {
+  background-color: #020617;
+  color: #f8fafc;
+  border-color: #334155;
+}
+
+body.dark-theme .form-group input::placeholder,
+body.dark-theme .date-time-input-row input::placeholder {
+  color: #64748b;
+}
+
+body.dark-theme .form-group input:focus,
+body.dark-theme .form-group select:focus,
+body.dark-theme .date-time-input-row input:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.15);
+}
+
+/* tabela no modo escuro */
+
+body.dark-theme .data-table th {
+  background-color: #111827;
+  color: #cbd5e1;
+  border-bottom-color: #334155;
+}
+
+body.dark-theme .data-table td {
+  color: #e5e7eb;
+  border-bottom-color: #1e293b;
+}
+
+body.dark-theme .data-table tr:hover td {
+  background-color: #111827;
+}
+
+body.dark-theme .empty-table {
+  color: #94a3b8;
+}
+
+/* botao secundario no modo escuro */
+
+body.dark-theme .btn-secondary {
+  background-color: #1e293b;
+  color: #e5e7eb;
+}
+
+body.dark-theme .btn-secondary:hover {
+  background-color: #334155;
+}
+
+/* alertas no modo escuro */
+
+body.dark-theme .success-message {
+  background-color: rgba(22, 101, 52, 0.22);
+  color: #86efac;
+  border: 1px solid rgba(134, 239, 172, 0.25);
+}
+
+body.dark-theme .error-message-page {
+  background-color: rgba(153, 27, 27, 0.22);
+  color: #fca5a5;
+  border: 1px solid rgba(252, 165, 165, 0.25);
+}
+
+body.dark-theme .passenger-warning {
+  background-color: rgba(154, 52, 18, 0.18);
+  border-color: rgba(251, 146, 60, 0.35);
+  color: #fdba74;
+}
+
+body.dark-theme .passenger-warning p {
+  color: #fdba74;
+}
+
+/* botao com icone */
+.btn-primary,
+.btn-secondary,
+.btn-small,
+.btn-danger-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* botao de fechar modal sempre centralizado */
+.modal-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

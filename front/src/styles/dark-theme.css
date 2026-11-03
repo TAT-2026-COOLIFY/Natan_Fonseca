@@ -1,0 +1,261 @@
+/* tema escuro */
+
+body.dark-theme {
+  background-color: #020617;
+  color: #e5e7eb;
+}
+
+body.dark-theme .layout,
+body.dark-theme .content {
+  background-color: #020617;
+}
+
+body.dark-theme .header {
+  background-color: rgba(15, 23, 42, 0.94);
+  border-bottom-color: #1e293b;
+}
+
+/* Títulos e textos secundários dentro de qualquer card escuro */
+body.dark-theme .header h1,
+body.dark-theme .page-title h2,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme .trip-section-title strong,
+body.dark-theme .panel-title-inline h3,
+body.dark-theme .user-card-header strong,
+body.dark-theme .route-summary-line strong,
+body.dark-theme .vehicle-selected-box strong,
+body.dark-theme .date-time-header strong,
+body.dark-theme .date-time-status strong,
+body.dark-theme .manage-metrics-grid strong,
+body.dark-theme .route-metrics strong,
+body.dark-theme .map-route-info strong,
+body.dark-theme .map-route-option span,
+body.dark-theme .pdf-modal-header h3,
+body.dark-theme .dashboard-stat-pro strong,
+body.dark-theme .stat-card strong,
+body.dark-theme .dashboard-panel-header h3,
+body.dark-theme .dashboard-operation-grid strong,
+body.dark-theme .dashboard-profile-pro h4,
+body.dark-theme .dashboard-profile-row strong,
+body.dark-theme .dashboard-trip-item strong,
+body.dark-theme .dashboard-empty-state strong,
+body.dark-theme .dashboard-operation-card strong,
+body.dark-theme .dashboard-attention-header h4,
+body.dark-theme .dashboard-attention-item strong,
+body.dark-theme .trip-edit-route-preview strong,
+body.dark-theme .travel-status-summary strong {
+  color: #f8fafc;
+}
+
+body.dark-theme .page-title p,
+body.dark-theme .trip-planner-header p,
+body.dark-theme .dashboard-top-pro p,
+body.dark-theme .dashboard-hero p,
+body.dark-theme .cadastro-modal-header p,
+body.dark-theme .trip-edit-modal-header p,
+body.dark-theme .header-label,
+body.dark-theme .trip-section-title span,
+body.dark-theme .panel-title-inline p,
+body.dark-theme .user-card-header span,
+body.dark-theme .route-summary-line span,
+body.dark-theme .vehicle-selected-box span,
+body.dark-theme .date-time-header span,
+body.dark-theme .date-time-status span,
+body.dark-theme .manage-metrics-grid span,
+body.dark-theme .route-metrics span,
+body.dark-theme .map-route-info span,
+body.dark-theme .map-route-option small,
+body.dark-theme .status-big-box p,
+body.dark-theme .pdf-modal-header p,
+body.dark-theme .dashboard-stat-pro span,
+body.dark-theme .dashboard-stat-pro p,
+body.dark-theme .dashboard-profile-pro p,
+body.dark-theme .dashboard-profile-row span,
+body.dark-theme .dashboard-trip-item span,
+body.dark-theme .dashboard-empty-state,
+body.dark-theme .dashboard-operation-card span,
+body.dark-theme .dashboard-operation-card p,
+body.dark-theme .dashboard-attention-item span,
+body.dark-theme .table-title-row p,
+body.dark-theme .trip-edit-route-preview span {
+  color: #94a3b8;
+}
+
+body.dark-theme .user-card-header {
+  background-color: #0f172a;
+  border-color: #334155;
+}
+
+body.dark-theme .password-toggle-btn {
+  color: #94a3b8;
+}
+
+body.dark-theme .password-toggle-btn:hover {
+  color: #38bdf8;
+}
+
+body.dark-theme .theme-toggle-button {
+  background-color: #1e293b;
+  color: #facc15;
+  border-color: #334155;
+}
+
+body.dark-theme .theme-toggle-button:hover {
+  background-color: #334155;
+}
+
+/* Painéis principais (cards de primeiro nível) */
+body.dark-theme .form-panel,
+body.dark-theme .table-panel,
+body.dark-theme .trip-planner-card,
+body.dark-theme .trip-fields-area,
+body.dark-theme .trip-preview-area,
+body.dark-theme .manage-route-card,
+body.dark-theme .manage-status-card,
+body.dark-theme .date-time-card,
+body.dark-theme .map-route-card,
+body.dark-theme .dashboard-stat-pro,
+body.dark-theme .dashboard-pro-panel,
+body.dark-theme .pdf-modal-card,
+body.dark-theme .cadastro-modal-card,
+body.dark-theme .cadastro-modal-form,
+body.dark-theme .trip-edit-modal-card,
+body.dark-theme .trip-edit-modal-form {
+  background-color: #0f172a;
+  border-color: #1e293b;
+  color: #e5e7eb;
+}
+
+/* Caixas internas */
+body.dark-theme .route-summary-box,
+body.dark-theme .status-big-box,
+body.dark-theme .vehicle-selected-box,
+body.dark-theme .empty-route-preview,
+body.dark-theme .date-time-status,
+body.dark-theme .map-route-info div,
+body.dark-theme .map-route-option,
+body.dark-theme .manage-metrics-grid div,
+body.dark-theme .route-metrics div,
+body.dark-theme .dashboard-operation-grid div,
+body.dark-theme .dashboard-profile-row,
+body.dark-theme .dashboard-trip-item,
+body.dark-theme .dashboard-empty-state,
+body.dark-theme .dashboard-operation-card,
+body.dark-theme .dashboard-attention-item,
+body.dark-theme .trip-edit-route-preview div,
+body.dark-theme .travel-status-summary div,
+body.dark-theme .travel-filters-panel,
+body.dark-theme .stat-card,
+body.dark-theme .dashboard-attention-list {
+  background-color: #111827;
+  border-color: #334155;
+}
+
+/* Caixas de destaque azul */
+body.dark-theme .trip-edit-info-box {
+  background-color: rgba(37, 99, 235, 0.16);
+  border-color: rgba(96, 165, 250, 0.35);
+  color: #bfdbfe;
+}
+
+body.dark-theme .trip-edit-info-box strong {
+  color: #dbeafe;
+}
+
+body.dark-theme .map-route-option-ativa {
+  background-color: rgba(37, 99, 235, 0.2);
+  border-color: #38bdf8;
+}
+
+body.dark-theme .map-route-option-ativa span {
+  color: #93c5fd;
+}
+
+body.dark-theme .btn-danger-action {
+  background-color: rgba(153, 27, 27, 0.25);
+  color: #fca5a5;
+}
+
+body.dark-theme .btn-danger-action:hover {
+  background-color: rgba(153, 27, 27, 0.4);
+}
+
+body.dark-theme .trip-edit-info-box p {
+  color: #bfdbfe;
+}
+
+body.dark-theme .table-count-badge,
+body.dark-theme .hero-badge,
+body.dark-theme .mobile-menu-toggle {
+  background-color: #1e293b;
+  border-color: #334155;
+  color: #93c5fd;
+}
+
+body.dark-theme .mobile-menu-toggle:hover {
+  background-color: #334155;
+}
+
+body.dark-theme .pdf-modal-header {
+  border-bottom-color: #1e293b;
+}
+
+body.dark-theme .pdf-modal-actions {
+  border-top-color: #1e293b;
+}
+
+body.dark-theme .pdf-preview-area {
+  background-color: #020617;
+}
+
+/* Filtros da tela de viagens */
+body.dark-theme .travel-status-summary span {
+  color: #93c5fd;
+}
+
+body.dark-theme .travel-filter-search label,
+body.dark-theme .travel-filters-panel label {
+  color: #cbd5e1;
+}
+
+body.dark-theme .travel-filter-input-icon svg {
+  color: #93c5fd;
+}
+
+body.dark-theme .travel-filter-input-icon input,
+body.dark-theme .travel-filters-panel input,
+body.dark-theme .travel-filters-panel select {
+  background-color: #020617;
+  border-color: #334155;
+  color: #f8fafc;
+}
+
+body.dark-theme .travel-filter-input-icon input::placeholder {
+  color: #64748b;
+}
+
+body.dark-theme .travel-filter-input-icon input:focus,
+body.dark-theme .travel-filters-panel input:focus,
+body.dark-theme .travel-filters-panel select:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.18);
+}
+
+
+body.dark-theme input[type="date"],
+body.dark-theme input[type="time"],
+body.dark-theme input[type="datetime-local"] {
+  color-scheme: dark;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2'/%3E%3Cline x1='16' y1='2' x2='16' y2='6'/%3E%3Cline x1='8' y1='2' x2='8' y2='6'/%3E%3Cline x1='3' y1='10' x2='21' y2='10'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 18px;
+}
+
+body.dark-theme input[type="date"]::-webkit-calendar-picker-indicator,
+body.dark-theme input[type="time"]::-webkit-calendar-picker-indicator,
+body.dark-theme input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  cursor: pointer;
+}
