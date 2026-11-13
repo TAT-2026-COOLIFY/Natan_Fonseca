@@ -1,9 +1,11 @@
 package br.com.tcc.transporte.security;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -29,6 +31,11 @@ public class SecurityConfig {
 
     private final JwtAuthenticationFilter jwtAuthenticationFilter;
     private final ObjectMapper objectMapper = new ObjectMapper();
+
+    // Vem da variavel de ambiente APP_FRONTEND_URL (Coolify).
+    // Pode ter mais de uma URL separada por virgula.
+    @Value("${app.frontend.url:http://localhost:5173}")
+    private String frontendUrl;
 
     public SecurityConfig(JwtAuthenticationFilter jwtAuthenticationFilter) {
         this.jwtAuthenticationFilter = jwtAuthenticationFilter;
@@ -96,9 +103,24 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
 
+        // Sempre libera o frontend local (desenvolvimento)
+        List<String> origensPermitidas = new ArrayList<>();
+        origensPermitidas.add("http://localhost:5173");
+
+        // Libera tambem as URLs que vierem do APP_FRONTEND_URL
+        for (String url : frontendUrl.split(",")) {
+            String origem = url.trim();
+            if (origem.endsWith("/")) {
+                origem = origem.substring(0, origem.length() - 1);
+            }
+            if (!origem.isEmpty() && !origensPermitidas.contains(origem)) {
+                origensPermitidas.add(origem);
+            }
+        }
+
         CorsConfiguration config = new CorsConfiguration();
 
-        config.setAllowedOrigins(List.of("http://localhost:5173"));
+        config.setAllowedOrigins(origensPermitidas);
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
         config.setAllowCredentials(true);
